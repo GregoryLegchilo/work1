@@ -1,0 +1,132 @@
+
+/*
+    @media
+    all - все устройства
+    screen - с экраном
+    print - печатающие устройства
+    speech - читающие устройства
+
+    not - кроме
+    only - только
+    
+    @media only screen {} - только с экраном
+    @media not screen {} - все кроме, устройств с экраном
+    
+    @media screen (max-width: 1200px), (max-width: 300px) {}
+    @media screen (max-width: 1200px) and (min-width: 700px) {}
+    
+    @media screen and (max-width: 768px) and (min-width: 320px) and (orientation: landscape) {}
+    
+
+    max-width: 1200px  - <=1200px
+    min-width: 1200px -  >=1200px
+*/
+
+/*Контрольные точки*/
+/* // Устройства Small (телефоны с горизонтальной ориентацией, 576 пикселей и выше)
+@media (min-width: 576px) { ... }
+
+// Устройства Medium (планшеты, 768 пикселей и выше)
+@media (min-width: 768px) { ... }
+
+// Устройства Large (настольные компьютеры, 992 пикселей и выше)
+@media (min-width: 992px) { ... }
+
+// Устройства X-Large (большие настольные компьютеры, 1200 пикселей и выше)
+@media (min-width: 1200px) { ... }
+
+// Устройства XX-Large (большие настольные компьютеры, 1400 пикселей и выше)
+@media (min-width: 1400px) { ... } */
+
+
+/*
+Desktop
+
+@media (max-width: 1280px) {} <=1280
+
+@media (max-width: 1150px) {} <=1150
+
+@media (max-width: 1024px) {} <=1024
+
+@media (max-width: 800px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 320px) {}
+*/
+
+/*
+Mobile
+
+@media (min-width: 320px) {} >=320px
+
+@media (min-width: 540px) {} >=540px
+
+@media (min-width: 800px) {} >=800px
+
+@media (min-width: 1150px) {}
+*/
+@media (max-width: 1170px) {
+    .awesome {
+        width: 100%;
+    }
+
+    
+ }
+
+@media (max-width: 1024px) {
+    .container2 .awesome,
+    .banner1 .awesome{
+        align-items: center;
+        flex-direction: column;
+    }
+    .awesome, .awesome1 {
+        width: 100%;
+    }
+    .banner{
+        align-items: center;    
+        margin-bottom: 30px;
+    }
+    .social-ico {
+    
+        justify-content: center;
+    }
+    .social {
+       
+        align-items: center;
+    }
+    .banner_h1,
+    .banner_h5 {
+        align-items: center;
+        justify-content: center;
+        Width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__item-ico {
+        width: 28px;
+        height: 28px;
+    }
+    .awesome, .awesome1 {
+        flex-direction: column;
+    }
+    .awesome__item {
+        margin-right: 0;
+        margin-bottom: 30px;
+       
+    }
+}
+
+
+@media (max-width: 425px) {
+    
+}
+
+@media (max-width: 375px) {
+   
+}
+
+@media print {
+  
+}
